@@ -1,0 +1,15 @@
+.Article {
+
+}
+
+.ArticlePreview {
+    display: flex;
+}
+
+.ArticlePreview img {
+    margin-right: 10px;
+}
+
+.ArticlePreview p {
+    margin: 0;
+}
