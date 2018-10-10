@@ -1,0 +1,23 @@
+{
+  "name": "graphql-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^14.0.2",
+    "graphql-tools": "^4.0.0"
+  },
+  "scripts": {
+    "start": "BABEL_DISABLE_CACHE=1 nodemon -w schema.graphql -w index.js -w resolvers.js --exec babel-node index.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-import-graphql": "^2.6.2",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.18.4",
+    "prettier": "^1.14.3"
+  }
+}
