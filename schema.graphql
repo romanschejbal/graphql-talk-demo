@@ -1,0 +1,21 @@
+type Article {
+  id: String!
+  title: String!
+  isActive: Boolean!
+  thumbnail(size: Int!): String
+  tags: [String]
+  createdAt: String
+  lead: String!
+  content: String!
+  body: String! @deprecated(reason: "Use content instead")
+  relatedArticles: [Article]!
+}
+
+type Query {
+  articles(activeOnly: Boolean): [Article]!
+  article(id: String!): Article
+}
+
+type Root {
+  query: Query
+}
